@@ -5,10 +5,11 @@
     "build": "tsc",
     "test": "npx knex migrate:rollback && npx knex migrate:up && jest",
     "lint": "eslint src",
-    "lint-fix": "eslint --fix src"
+    "lint-fix": "eslint --fix src",
+    "clean": "rm -rf node_modules"
   },
   "devDependencies": {
-    "@dbos-inc/dbos-cloud": "^1.1.14",
+    "@dbos-inc/dbos-cloud": "^1.7.6",
     "@dbos-inc/eslint-plugin": "^0.0.6",
     "@types/jest": "^29.5.5",
     "@types/supertest": "^2.0.14",
